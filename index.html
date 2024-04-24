@@ -1,184 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Mezcales</title>
-		<link rel="stylesheet" href="css/styles.css" />
-	</head>
-	<header class="header">
-		<nav class="barra">
-			<!-- COMIENZA MENU HAMBURGUEZA OCULTO -->
-			<label for="inp-amb">
-				<img src="img/icon-menu.png" class="menu-amb">
-				<img src="img/cerrar-menu.png" class="cerrar-amb">
-			</label>
-			<input type="checkbox" id="inp-amb" checked hidden><!-- CHECADA POR DEFECTO -->
-			<!-- FINALIZA MENU HAMBURGUEZA OCULTO -->
-			<div class="logo">
-				<a href="https://giselregalado.github.io/Inicio/"><img class="logo" src="img/logo.jpg"></a>
-			</div>
-			<div class="menu">
-				<a href="https://giselregalado.github.io/Mezcales/">MEZCAL</a>
-				<a href="https://giselregalado.github.io/Cremas-/">CREMAS</a>
-				<a href="https://giselregalado.github.io/Contacto/">CONTACTO</a>
-				<a href="#">SOBRE NOSOTROS</a>
-			</div>
-			<div class="login">
-				<h1>Guarú Mezcal</h1>
-				<a href="https://giselregalado.github.io/Login/"><img src="img/usuario.png"></a>
-			</div>
-		
-		</header>
 
-	<body>
-		<section>
-			<h1 class="title">Mezcales</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mezcales</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-			<div class="container-icon">
-                <div class="container-cart-icon">
-                    <svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="icon-cart"
-				> 
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-					/>
-				    </svg>
-				    <div class="count-products">
-					    <span id="contador-productos">0</span>
-				    </div>   
+<body>
+    <header class="header">
+        <div class="header-container">
+            <label for="inp-amb" class="menu-toggle">
+                <img src="img/icon-menu.png" class="menu-amb">
+                <img src="img/cerrar-menu.png" class="cerrar-amb">
+            </label>
+            <input type="checkbox" id="inp-amb" checked hidden><!-- CHECADA POR DEFECTO -->
+            
+            <div class="logo">
+                <a href="https://giselregalado.github.io/Inicio/"><img class="logo-img" src="img/logo.jpg"></a>
+            </div>
+
+            <div class="barra">
+                <div class="menu">
+                    <a href="https://giselregalado.github.io/Mezcales/">MEZCAL</a>
+                    <a href="https://giselregalado.github.io/Cremas-/">CREMAS</a>
+                    <a href="https://giselregalado.github.io/Contacto/">CONTACTO</a>
+                    <a href="#">SOBRE NOSOTROS</a>
                 </div>
-				
+                <div class="login">
+                    <h1>Guarú Mezcal</h1>
+                    <a href="https://giselregalado.github.io/Login/"><img src="img/usuario.png"></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-				<div class="container-cart-products hidden-cart">
-                    <div class="row-product">
-                        <div class="cart-product">
-                            <div class="info-cart-product">
-                                <span class="cantidad-producto-carrito">---</span>
-                                <p class="titulo-producto-carrito">-----</p>
-                                <span class="precio-producto-carrito">---</span>
-                            </div>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="icon-close"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M6 18L18 6M6 6l12 12"
-                                />
-                            </svg>
+    <section>
+        <h1 class="title">Mezcales</h1>
+
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path>
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">---</span>
+                            <p class="titulo-producto-carrito">-----</p>
+                            <span class="precio-producto-carrito">---</span>
                         </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
                     </div>
-					
-                    <div class="cart-total">
-                        <h3>Total:</h3>
-                        <span class="total-pagar">$0</span>
-						<a href="https://giselregalado.github.io/FormaPago/"><button class="pay">Pagar</button></a>
+                </div>
+
+                <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$0</span>
+                    <a href="https://giselregalado.github.io/FormaPago/"><button class="pay">Pagar</button></a>
                     </div>
-				</div>
-			</div>
-		</section>
-		<div class="container-items">
-			<div class="item">
-				<figure>
-					<img
-						src="img/Mezcal_1.jpg"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Destilado de agave mezcal Guarú sabor tamarindo 750ml </h2>
-					<p class="price">$299</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="img/Mezcal_2.jpeg"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Destilado de agave mezcal joven 750 ml </h2>
-					<p class="price">$190</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="img/Mezcal_3.jpeg"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Destilado de agave mezcal Guarú sabor cannabis 750 ml </h2>
-					<p class="price">$450</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="img/Mezcal_4.jpg"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Destilado de agave mezcal Guarú sabor tamarindo 750ml </h2>
-					<p class="price">$299</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="img/Mezcal_5.jpg"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Destilado de agave mezcal joven 750 ml </h2>
-					<p class="price">$190</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="img/Mezcal_2.jpeg"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Destilado de agave mezcal Guarú sabor cannabis 750 ml </h2>
-					<p class="price">$450</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-		</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <script src="js/index.js"></script>
-	</body>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="img/Mezcal_1.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Destilado de agave mezcal Guarú sabor tamarindo 750ml </h2>
+                <p class="price">$299</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/Mezcal_2.jpeg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Destilado de agave mezcal joven 750 ml </h2>
+                <p class="price">$190</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/Mezcal_3.jpeg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Destilado de agave mezcal Guarú sabor cannabis 750 ml </h2>
+                <p class="price">$450</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/Mezcal_4.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Destilado de agave mezcal Guarú sabor tamarindo 750ml </h2>
+                <p class="price">$299</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/Mezcal_5.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Destilado de agave mezcal joven 750 ml </h2>
+                <p class="price">$190</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/Mezcal_2.jpeg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Destilado de agave mezcal Guarú sabor cannabis 750 ml </h2>
+                <p class="price">$450</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
 
-	<footer class="footer">
+    <footer class="footer">
         <div class="logo-f">
             <a href="index.html"><img src="img/logo.jpg" width="120px"></a>
         </div>
@@ -187,11 +146,11 @@
         </div>
         <div class="listas">
             <ul class="ul1">
-                <li >MEZCAL</li>
+                <li>MEZCAL</li>
                 <li class="sub-li"><a href="#">Mezcal Joven</a></li>
                 <li class="sub-li"><a href="#">Mezcal Reposado</a></li>
                 <li class="sub-li"><a href="#">Mezcal Añejo</a></li>
-                <li class="sub-li"><a href="#">MEzcal Maduro</a></li>
+                <li class="sub-li"><a href="#">Mezcal Maduro</a></li>
             </ul>
             <ul class="ul2">
                 <li>CREMAS</li>
@@ -209,9 +168,10 @@
                 <li class="sub-li"><a href="#">¿Quiénes somos?</a></li>
                 <li class="sub-li"><a href="#">Misión y visión</a></li>
             </ul>
-
         </div>
-        
-        
     </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
 </html>
